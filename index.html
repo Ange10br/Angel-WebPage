@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="Este es mi portafolio de proyectos, aquí encontrarás mis habilidades y proyectos en los que he trabajado como desarrollador web.">
+    <title>Angel Obregon</title>
+</head>
+<body>
+    <header class="header d-flex">
+        
+        <nav class="header-nav d-flex"> 
+            
+            <a class="header-logo" href="#Home">
+                <img class="header-logo-image" src="" alt="">
+            </a>
+
+            <button class="nav-button" onclick="openNav()">
+                <img src="./Assets/icons/menu-button.svg" alt="">
+            </button>
+
+            <ul class="header-nav-menu d-flex" id="navMenu">
+
+                <li class="nav-item--container"><a class="header-nav-item d-flex" href="#Home" onclick="openNav()">HOME</a></li>
+
+                <li class="nav-item--container d-flex"><a class="header-nav-item d-flex" href="#About" onclick="openNav()">ABOUT ME</a></li>
+
+                <li class="nav-item--container"><a class="header-nav-item d-flex" href="#Skills" onclick="openNav()">skills</a></li>
+
+                <li class="nav-item--container"><a class="header-nav-item d-flex" href="#Projects" onclick="openNav()">PROYECTS</a></li>
+
+                <li class="nav-item--container"><a class="header-nav-item d-flex" href="#Contact" onclick="openNav()">CONTACT</a></li>
+
+            </ul>
+            
+            
+            
+            
+        </nav>
+
+    </header>
+    <main class="main">
+        <section class="d-flex main-presentation" id="Home">
+
+            
+            <img class="presentation-pic" src="./Assets/images/profile.png" alt="Foto de Angel Obregon">
+            
+            
+            
+            <div class="main-presentation-text d-flex">
+                <h1 class="presentation-name"> I'm Angel Obregon</h1>
+                <h2 class="presentation-ocupation">FRONT-END <br>WEB DEVELOPER</h2>
+                <h3 class="presentation-country">México - CDMX</h3>
+            </div>
+        </section>
+
+        
+        <section class="main-about d-flex" id="About">
+
+            <picture>
+                <source srcset="./Assets/vectors/about-waves(desk-tablet).svg" media="(min-width: 400px)" class="about-waves">
+                <img src="./Assets/vectors/about-waves.svg" alt="" class="about-waves">
+            </picture>
+
+            <h2 class="about-title">ABOUT ME</h2>
+
+            <div class="about-container d-flex">
+                
+                <div class="about-text--container d-flex">
+                    
+                    <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, natus modi maiores totam doloribus quidem tempore inventore ad. Vitae a atque soluta eius aliquid adipisci recusandae esse magnam quidem blanditiis!</p>
+                </div>
+            
+                <img src="./Assets/images/about-image.jpg" alt="Foto de un portatil" class="about-image">
+
+                
+            </div>
+            
+
+        </section>
+        <section class=" main-skills d-flex" id="Skills">
+
+            <picture>
+                <source srcset="./Assets/vectors/skills-wave-top(desk-tablet).svg" media="(min-width: 400px)">
+                <img src="./Assets/vectors/skills-wave-top.svg" alt="Separacion" class="skills-wave-top">
+
+            </picture>
+            
+
+            <h2 class="skills-title">SKILLS</h2>
+
+            <div class="skills-container d-flex">
+                <img class="skill" src="./Assets/icons/html.svg" alt="logo de HTML5">
+                <img class="skill" src="./Assets/icons/css-3.svg" alt="logo de CSS3">
+                <img class="skill" src="./Assets/icons/javascript.svg" alt="logo de JavaScript">
+            </div>
+
+
+            <picture>
+
+                <source srcset="./Assets/vectors/skills-wave-bottom(desk-tablet).svg" media="(min-width: 400px)">
+
+                <img src="./Assets/vectors/skills-wave-bottom.svg" alt="Separacion" class="skills-wave-bottom">
+            </picture>
+            
+        </section>
+        <section class="main-projects d-flex" id="Projects">
+
+            <h2 class="projects-title">PROYECTS</h2>
+
+            <div class="projects-container d-flex">
+                <a href="https://pavosh.netlify.app/" target="_blank" class="projects-cards-container d-flex">
+                <div class="projects-card card1 d-flex">
+                    <h3 class="card-text pavosh">PAVOSH MUSIC</h3>
+                    <img src="./Assets/images/pavosh-page.png" alt="Foto del proyecto">
+                </div>
+                
+            </a>
+            <a href="#Contact" class="projects-cards-container d-flex">
+                <div class="projects-card card2 d-flex">
+                    The next proyect can be with you ;)
+                </div>
+            </a>
+            </div>
+            
+            
+        </section>
+        <section class="main-contact d-flex" id="Contact">
+            <h2 class="contact-title">CONTACT</h2>
+            <form class="contact-form d-flex" action="">
+                
+                <div class="contact-form-container d-flex">
+                    <label class="contact-form-label" for="name">Name</label>
+                    <input class="contact-form-input" type="text" name="name" id="name" contenteditable="true">
+                </div>
+
+                <div class="contact-form-container d-flex">
+                    <label class="contact-form-label" for="e-mail">E-mail</label>
+                    <input class="contact-form-input" type="email" name="e-mai" id="e-mail" contenteditable="true">
+                </div>
+
+                <div class="contact-form-container d-flex">
+                    <label class="contact-form-label" for="message">Message</label>
+                    <textarea class="contact-form-input" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                
+                
+
+                
+
+                
+
+                
+
+                <button class="contact-form-submit" type="submit">Send</button>
+            </form>
+
+            <picture class="footer-divition">
+                <source srcset="./Assets/vectors/footer-division(desk-tablet).svg" media="(min-width: 400px)" class="footer-divition">
+                <img class="footer-divition" src="./Assets/vectors/footer-division.svg" alt="division del footer">
+            </picture>
+
+            
+        </section>
+        
+    </main>
+    <footer>
+        
+        
+
+    </footer>
+
+
+
+    <script src="./portfolio.js"></script>
+</body>
+</html>
