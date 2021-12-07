@@ -614,6 +614,7 @@ ul, li {
 
     .contact-form-submit {
         width: 40%;
-        margin-left: 0;
+        margin-right: 0;
+        align-self: flex-end;
     }
 }
