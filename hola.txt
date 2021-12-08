@@ -1,3 +1,7 @@
 hola
 
+<<<<<<< HEAD
 no quiero que modifiquen mi archivo
+=======
+modificado por que quiero equisde
+>>>>>>> bfeb1dbebf8fd2518533a86836a75da41a87d1fd
